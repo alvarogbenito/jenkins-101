@@ -13,7 +13,7 @@ pipeline {
                 echo "Building.."
                 sh '''
                 cd myapp
-                apk add py3-requirements.txt
+                apk add py3-fire=0.4.0
                 '''
             }
         }
