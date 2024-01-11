@@ -13,7 +13,7 @@ pipeline {
                 echo "Building.."
                 sh '''
                 cd myapp
-                apk add py3-fire-0.5.0-r0
+                pip install -r requirements.txt
                 '''
             }
         }
@@ -23,7 +23,7 @@ pipeline {
                 sh '''
                 cd myapp
                 python3 hello.py
-                python3 hello.py --name=Alvaro
+                python3 hello.py --name=Brad
                 '''
             }
         }
